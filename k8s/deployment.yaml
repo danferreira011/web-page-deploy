@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: webpage
-        image: danferreira011/web-color:blue
+        image: danferreira011/app-pilot-node:blue
         ports:
         - containerPort: 80
 ---

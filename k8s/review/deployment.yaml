@@ -76,6 +76,9 @@ metadata:
   name: movies
   annotations:
     argocd.argoproj.io/sync-wave: "0"
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    service.beta.kubernetes.io/aws-load-balancer-type: external
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
 spec:
   selector:
     app: movies

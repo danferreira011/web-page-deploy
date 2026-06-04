@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webpage
+  name: webpage-blue
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: webpage
+      app: webpage-blue
   template:
     metadata:
       labels:
-        app: webpage
+        app: webpage-blue
     spec:
       containers:
-      - name: webpage
+      - name: webpage-blue
         image: danferreira011/web-color:blue
         ports:
         - containerPort: 80

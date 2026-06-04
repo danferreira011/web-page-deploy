@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webpage
+  name: webpage-green
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: webpage
+      app: webpage-green
   template:
     metadata:
       labels:
-        app: webpage
+        app: webpage-green
     spec:
       containers:
-      - name: webpage
+      - name: webpage-green
         image: danferreira011/web-color:green
         ports:
         - containerPort: 80
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webpage
+  name: webpage-green
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
 spec:

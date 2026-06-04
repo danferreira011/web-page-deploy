@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
         - name: webcolor
-          image: danferreira011/web-color:blue
+          image: danferreira011/web-color:green
           ports:
             - containerPort: 80
   minReadySeconds: 20

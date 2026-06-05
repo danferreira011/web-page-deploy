@@ -50,6 +50,5 @@ spec:
         - setWeight: 75
         - analysis:
             template:
-            - templateName: webcolor-analysis
-        
+            - templateName: webcolor-analysis        
         - setWeight: 100

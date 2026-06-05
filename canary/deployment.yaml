@@ -44,7 +44,12 @@ spec:
         - setWeight: 25
         - pause: {}
         - setWeight: 50
-        - pause: {duration: 20}
+        - analysis:
+            template:
+            - templateName: webcolor-analysis
         - setWeight: 75
-        - pause: {duration: 20}
+        - analysis:
+            template:
+            - templateName: webcolor-analysis
+        
         - setWeight: 100

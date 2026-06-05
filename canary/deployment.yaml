@@ -45,10 +45,10 @@ spec:
         - pause: {}
         - setWeight: 50
         - analysis:
-            template:
+            templates:
             - templateName: webcolor-analysis
         - setWeight: 75
         - analysis:
-            template:
+            templates:
             - templateName: webcolor-analysis        
         - setWeight: 100
